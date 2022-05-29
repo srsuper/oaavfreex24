@@ -32,7 +32,7 @@ from linebot.models import (
     ImageMessage, VideoMessage, AudioMessage, FileMessage,
     UnfollowEvent, FollowEvent, JoinEvent, LeaveEvent, BeaconEvent,
     FlexSendMessage, BubbleContainer, ImageComponent, BoxComponent,
-    TextComponent, SpacerComponent, IconComponent, ButtonComponent,
+    TextComponent, IconComponent, ButtonComponent,
     SeparatorComponent,
 )
 
@@ -279,5 +279,5 @@ def handle_message(event):
 #=======================================================================================================================
 import os 
 if __name__ == "__main__":
-    port = int(os.environ.get('PORT', 8080))
+    port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port, debug=True)
